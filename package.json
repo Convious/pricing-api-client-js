@@ -1,0 +1,44 @@
+{
+  "name": "pricing-api-client-js",
+  "version": "1.0.0",
+  "description": "A client for Convious pricing API",
+  "main": "index.js",
+  "author": "Convious",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "^0.0.35",
+    "@types/nock": "^11.1.0",
+    "@types/uuid": "^3.4.5",
+    "ava": "^2.4.0",
+    "nock": "^11.3.5",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.4.1",
+    "typemoq": "^2.1.0",
+    "typescript": "^3.6.3",
+    "uuid": "^3.3.3"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "ava": {
+    "files": [
+      "src/test/**/*.test.ts"
+    ],
+    "sources": [
+      "src/**/*"
+    ],
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
